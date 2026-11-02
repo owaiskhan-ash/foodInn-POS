@@ -1,0 +1,47 @@
+// Dish image URLs published on Food Inn's category pages. Items without a
+// dish photo on the site intentionally use the neutral fallback in the POS.
+const files = {
+  'Creamy Chicken Reshmi Tikka':'7657-1790082893', 'Classic Chicken Tikka':'7612-1790082537',
+  'Schezwan Tandoori Chicken':'6414-1790082547', 'Chicken Tandoori Lollipop [Red Masala]':'4629-1790082581',
+  'Chicken Seekh Kebab':'9352-1790082533', 'Creamy Chicken Tikka':'6697-1790082887',
+  'Creamy Chicken Seekh Kebab':'7785-1790082889', 'Creamy Chicken Tandoori':'9484-1790082891',
+  'Hazari Chicken Tikka':'5947-1790082529', 'Creamy Chicken Pahadi Tikka':'8136-1790082895',
+  'Creamy Chicken Hazari Tikka':'6347-1790082897', 'Creamy Chicken Malai Tikka':'8296-1790082900',
+  'Creamy Mutton Seekh Kebab':'9934-1790082902', 'Mixed Tikka':'4585-1790082867',
+  'Malai Chicken Tikka':'2947-1790082570', 'Paneer Tikka [Red Masala]':'7564-1793473891',
+  'Mixed Mughlai Platter':'1243-1793473973',
+  'Chicken Seekh Kebab Biryani':'6388-1790082791', 'Egg Pulao':'5234-1790083047',
+  'Egg Biryani':'1296-1790083045', 'Chicken Tikka Biryani':'7748-1790082789',
+  'Chicken Biryani [Boneless]':'6454-1790082787', 'Chicken Biryani':'4746-1790082785',
+  'Chicken Pulao':'2995-1790082783', 'Prawns Pulao':'4882-1790082797',
+  'Mutton Seekh Kebab Biryani':'2886-1790082803', 'Fish Biryani':'6695-1790082799',
+  'Mutton Khichdi':'7659-1790082801', 'Mutton Biryani':'8371-1790082806',
+  'Mutton Pulao':'1289-1790082793', 'Dal Khichdi':'4764-1793473960',
+  'Prawns Biryani':'5138-1790082795', 'Paneer Tikka Biryani':'8135-1793473954',
+  'Harira Shorba (Mutton)':'5357-1793474882', 'Laham BBQ Kabsa':'8937-1790082618',
+  'Laham Ruz-Ma-Mushakal Mashviyat':'7696-1790082600', 'Majbous Laham':'2899-1790082613',
+  'Ali Pasha Ruzma Laham Barra':'3119-1790082611', 'Laham Turkish Kabab Rice':'4332-1790082521',
+  'Laham Kabsa':'2957-1790082622', 'Harira Shorba (Chicken)':'6471-1790082436',
+  'Laham Shawarma':'7195-1793474879', 'Yemeni Marak':'8949-1793474884',
+  'Laham BBQ Mandi':'3397-1790082625', 'Laham Cheese Shawarma':'6749-1793474860',
+  'Chicken Fattoush Salad':'7239-1793474856', 'Lebanese Tikka (6pcs)':'3846-1793474838',
+  'Faham Tikka (6pcs)':'8784-1793474841', 'Hummus With Dajaj':'9954-1793474834',
+  'Hummus With Laham':'4474-1793474830', 'Mutton Nihari':'7952-1790082557',
+  'Aloo Paratha With Masala Dahi':'9924-1790081969', 'Masala Papad':'3479-1792656340',
+  'Butter Naan':'8884-1792656342', 'Tandoori Roti':'3475-1793473861', 'Chapati':'3959-1793473855',
+  'Lachha Paratha':'3527-1793106976', 'Tandoori Naan':'1174-1793106973',
+  'Rumali Roti':'6891-1793106971', 'Papad':'3821-1793106965',
+  'Garlic Roti':'9583-1793106969', 'Tandoori Garlic Naan':'5331-1793106967',
+  'Prawns Spaghetti Aglio Olio Pasta':'9536-1793474779', 'Chicken Penne Pasta In Cheese Sauce':'4614-1793474794',
+  'Chicken Penne Pasta In Pink Sauce':'4461-1793474796', 'Chicken Penne Pasta In Arrabiata Sauce':'6256-1793474803',
+  'Chicken Spaghetti Pasta In Cheese Sauce':'5889-1793474799', 'Chicken Spaghetti Pasta In Pink Sauce':'9249-1793474801',
+  'Prawns Penne Pasta In Cheese Sauce':'9145-1793474772', 'Vegetable Spaghetti Pasta In Arrabiata Sauce':'4982-1790081798',
+  'Vegetable Penne Pasta In Cheese Sauce':'7694-1790081791', 'Vegetable Penne Pasta In Pink Sauce':'3462-1790081789',
+  'Gulab Jamun':'8597-1792656344', 'Honey Melon Milkshake':'9698-1790081867',
+  'Kesar Pista Milkshake':'1567-1790081918', 'Musambi Juice':'2291-1790081928',
+  'Ginger Lemon With Soda':'5636-1792656336', 'Cold Coffee Milkshake':'2521-1793473881',
+  'Pineapple Juice':'2821-1790081926'
+};
+export const dishImages = Object.fromEntries(Object.entries(files).map(([name,file]) =>
+  [name, `https://cdn.uengage.io/uploads/32975/crops/160/image-${file}.jpg.webp`]
+));
